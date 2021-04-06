@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "proud-stage-309819",
+  "private_key_id": "8d6db1b8567a8d76b1623e2eb2b5140ec9127620",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCWsPv85QhOEUSF\n7VpzWnM2b5RqxX584FWusQWACHyxfxNQazd8T7yFkIWDavH2yFkjj8sfieAxtxbN\nR2/knAQINxWAC2SOjvUIA4JyT36CBawsQFE0MBlO9P137xmD2iMYHqbyPXYTPkAm\nCHK/Dpl6eJRHvs2Yb4ctKnKnRVZ5MLV3GIFek6WGiRGebKIlkSzR2xmC7szCU31q\n3rDmxl36PKmeD7XNH2ATi9VW0BYYa3BHd3pfHMmdSPwz+34+WJmM6v0F2Wq1mIiS\nCOmIt2wE4lFKdwUdAsSShrdjKZK7FSZmVnk3Gka2HzO9lIoT2HLbkmjhy2lAMLjf\nUjO8zwsvAgMBAAECggEAOsnGLQWvJUGwUW1lRa5qVzjVlogAzjf4xWOzSR1GhDqW\nrt99MIas/hCBPeFZj1TfDbQZ4u53o/2RLDmr6eyB2DChNyh6rPERn/Q6jlz79j6/\nSi43X9xJ61dBkWoasqlF2rGOoN+gcmZtQUk3dtj7wF9NPeYusEMGYfT28NHop/Ni\n54i3pcPtcq71J0YCip+F1xZnfIgBU+cLIKXTKQnPyi1F62+rIIFBAPP8usUd7Xrf\nZK089wbRInuw729yY82dkxqkIQdMBGyjb1KSjfbVFe8Iv7sk3E3CYYlY7jx/BUmN\nTvkpEIXz+n5HvGmia66vtIWnKc8caAp7Xw7wahrPeQKBgQDLdVVMZAzVUdyp4v5H\ngadAIYA8XfAFDiL5fqNHzl4NrLqhed0EX4PxDlGmVduBVGCbBx3LTIS5FU58dyLV\nlYjak53Hv3YFX9LGbr48GviDQ2s1INCIjEvwybZIgCoU6BEhxl4L9IsqJdfp2fMH\nronuUABq7thuV3ShDWH0S0Hz2QKBgQC9mzdT2l1y2yu37Tj/iIX6YVJ48q0q+xc/\neVYxArCv8b2lglOehwVHKGHKxNcyY9J5BM700tNCE3jrl+VFhqxRNljQxUpEuz/w\nm3RFgFsBwoKpsJFULK5UY8YM4F7TMJgBRn9EgaTZYkMw7jnDqlkpkpcyXa6Q7Ezl\n04HiC2d6RwKBgB2oN8vP1bMOoLy+0tP3iTqm53tlMgR6oAyAMirYYQtbP0Ukb1wg\n1CnCLZKydzGt6/sNGYG14K7d9TfdYd2CU5WQ6PHh7cEwy5eTMvWt9MWlgS4YX21Y\nDgXGUWTWEcxEW6LxuGnDtrlpFMUIuQ1ImuB7FuR/dlr3Mo/7VGj4w19ZAoGAfsAb\nbXflzplLkYoI93IptmaG/omkT75JHUqc3uigew4MrG8CPVCfq6EINsf94BaxJeub\n+jhRt7NSu5PwVdkgqq29E9s/udC/frY9NRUIQZXpSUza6j1wUMPeKs93NJEgnIGn\nJIHSVOwGZNhsTyw6rLrtTmMoBoOhKGaLRjQ/eZMCgYAJ1euj0IBvBW1q/9ymv7Gk\nCc6Tqw1cnAlsTS8a/6tWw0c/5tGHaTsUB0Gsgw6Yw443tWo56Q08IC2SxkjuW0WD\nEMZ6B4xiz56eCKRZkxr5O9P4oX7SQS3ttKsfetoqnFjsdWRlzSskugxWhiJgA6PP\n/Fu5AzefBDu3ubPQ6bekYA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "momentjournal@proud-stage-309819.iam.gserviceaccount.com",
+  "client_id": "114155135653320066288",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/momentjournal%40proud-stage-309819.iam.gserviceaccount.com"
+}

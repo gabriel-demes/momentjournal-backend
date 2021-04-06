@@ -4,7 +4,7 @@ class CreateEntries < ActiveRecord::Migration[6.1]
       t.belongs_to :journal, null: false, foreign_key: true
       t.string :title
       t.text :body
-      t.integer :sentiment
+      t.decimal :sentiment
 
       t.timestamps
     end

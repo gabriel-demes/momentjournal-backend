@@ -4,6 +4,11 @@ class JournalsController < ApplicationController
         journal = Journal.create(journal_params)
         render json: journal
     end
+    
+    def show
+        journal = Journal.find(params[:id])
+        render json: journal
+    end
 
     def destroy
         journal = Journal.find(params[:id])

@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 2021_04_06_182817) do
     t.bigint "journal_id", null: false
     t.string "title"
     t.text "body"
-    t.integer "sentiment"
+    t.decimal "sentiment"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["journal_id"], name: "index_entries_on_journal_id"
