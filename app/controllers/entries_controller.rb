@@ -25,7 +25,7 @@ class EntriesController < ApplicationController
 
     def update
         entry = Entry.find(params[:id])
-        entry.update(body: params[:body])
+        entry.update(body: params[:body], title: params[:title])
         render json: entry
     end
 
