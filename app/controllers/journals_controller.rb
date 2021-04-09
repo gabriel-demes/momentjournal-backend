@@ -2,6 +2,7 @@ class JournalsController < ApplicationController
 
     def create
         journal = Journal.create(journal_params)
+        Entry.create(title: "title", body: "body", journal_id: journal.id)
         render json: journal
     end
     
