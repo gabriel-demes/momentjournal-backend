@@ -1,6 +1,8 @@
 class User < ApplicationRecord
     has_many :journals, dependent: :destroy
     has_many :entries, through: :journals
+    has_secure_password
+    validates :username, presence: true, uniqueness: { case_sensitive: false }
 
     def my_journals
         self.journals.map do |journal|
