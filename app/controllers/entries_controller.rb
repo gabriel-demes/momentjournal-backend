@@ -7,19 +7,25 @@ class EntriesController < ApplicationController
         render json: entry
     end
 
+    def show
+        entry = Entry.find(params[:id])
+        render json: entry
+    end
+
     def sentiment
         entry = Entry.find(params[:id])
         text_content = params[:entrybody]
         language = Google::Cloud::Language.language_service
         document = { content: text_content, type: :PLAIN_TEXT }
+        response = language.analyze_sentiment document: document
         sentiment = response.document_sentiment
-        entry.update(sentiment: sentiment)
+        entry.update(sentiment: sentiment.score)
         render json: sentiment.score
     end
 
     def update
         entry = Entry.find(params[:id])
-        entry.update(body: params[:body])
+        entry.update(body: params[:body], title: params[:title])
         render json: entry
     end
 

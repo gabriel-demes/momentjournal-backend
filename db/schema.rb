@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_06_182817) do
+ActiveRecord::Schema.define(version: 2021_04_12_153558) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,10 +24,27 @@ ActiveRecord::Schema.define(version: 2021_04_06_182817) do
     t.bigint "journal_id", null: false
     t.string "title"
     t.text "body"
-    t.integer "sentiment"
+    t.decimal "sentiment"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["journal_id"], name: "index_entries_on_journal_id"
+  end
+
+  create_table "goallists", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.string "title"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_goallists_on_user_id"
+  end
+
+  create_table "goals", force: :cascade do |t|
+    t.string "title"
+    t.boolean "completed"
+    t.bigint "goallist_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["goallist_id"], name: "index_goals_on_goallist_id"
   end
 
   create_table "journals", force: :cascade do |t|
@@ -48,5 +65,7 @@ ActiveRecord::Schema.define(version: 2021_04_06_182817) do
   end
 
   add_foreign_key "entries", "journals"
+  add_foreign_key "goallists", "users"
+  add_foreign_key "goals", "goallists"
   add_foreign_key "journals", "users"
 end
