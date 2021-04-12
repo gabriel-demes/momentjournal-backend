@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :goals
+  resources :goallists
   resources :calendars
   resources :entries
   resources :journals
