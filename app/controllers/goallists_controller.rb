@@ -20,7 +20,7 @@ class GoallistsController < ApplicationController
     end
 
     def destroy
-        list = List.find(params[:id])
+        list = Goallist.find(params[:id])
         list.destroy
         render json: list
     end
@@ -28,6 +28,6 @@ class GoallistsController < ApplicationController
     private
 
     def list_params
-        params.require(:list).permit(:user_id, :title)
+        params.require(:goallist).permit(:user_id, :title)
     end
 end
