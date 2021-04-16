@@ -3,7 +3,9 @@ class UsersController < ApplicationController
     before_action :authenticate, only: [:me]
 
     def create
-        user = User.create(user_params)
+        user = User.new(user_params)
+        user[:code] = Randomstring.generate(6)
+        user.save
         render json: user
     end
 

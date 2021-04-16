@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_12_153558) do
+ActiveRecord::Schema.define(version: 2021_04_16_173402) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -47,6 +47,15 @@ ActiveRecord::Schema.define(version: 2021_04_12_153558) do
     t.index ["goallist_id"], name: "index_goals_on_goallist_id"
   end
 
+  create_table "guests", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "journal_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["journal_id"], name: "index_guests_on_journal_id"
+    t.index ["user_id"], name: "index_guests_on_user_id"
+  end
+
   create_table "journals", force: :cascade do |t|
     t.string "title"
     t.bigint "user_id", null: false
@@ -62,10 +71,13 @@ ActiveRecord::Schema.define(version: 2021_04_12_153558) do
     t.string "email"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "code"
   end
 
   add_foreign_key "entries", "journals"
   add_foreign_key "goallists", "users"
   add_foreign_key "goals", "goallists"
+  add_foreign_key "guests", "journals"
+  add_foreign_key "guests", "users"
   add_foreign_key "journals", "users"
 end

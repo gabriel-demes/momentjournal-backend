@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :guests
   resources :goals
   resources :goallists
   resources :calendars
