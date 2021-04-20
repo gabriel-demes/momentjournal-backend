@@ -11,7 +11,7 @@ class JournalsController < ApplicationController
     def show
         # byebug
         journal = Journal.find(params[:id])
-        if @user.id == journal.user_id
+        if @user.id == journal.user_id || journal.guests.map(&:user_id).include?(@user.id)
             render json: journal
         else render json: {errors: ["Not Authorized"]}, status: :unauthorized
         end
