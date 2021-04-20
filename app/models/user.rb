@@ -21,7 +21,7 @@ class User < ApplicationRecord
 
     def guest_journals
         self.guests.map do |guest|
-            [guest[:journal_id], Journal.find(guest[:journal_id]).title]
+            [guest[:journal_id], Journal.find(guest[:journal_id]).title, User.find(Journal.find(guest[:journal_id]).user_id).name]
         end
     end
 end

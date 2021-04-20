@@ -48,3 +48,5 @@ gem 'dotenv-rails'
 gem 'google-cloud-language'
 
 gem 'randomstring'
+
+gem 'literate_randomizer'
