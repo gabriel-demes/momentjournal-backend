@@ -5,7 +5,7 @@ class User < ApplicationRecord
     has_many :guests
     has_secure_password
     validates :username, presence: true, uniqueness: { case_sensitive: false }
-    validates :code, presence: true, uniqueness: { case_sensitive: true }
+    
 
     def my_journals
         self.journals.map do |journal|

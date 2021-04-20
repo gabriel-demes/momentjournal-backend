@@ -30,7 +30,10 @@ class UsersController < ApplicationController
     end
 
     def signup
-        user = User.create(user_params)
+        # byebug
+        user = User.new(user_params)
+        user.password=params["password"]
+        user.save
         if user.valid?
             token = JWT.encode({user_id: user.id}, ENV["JWT_SECRET"], 'HS256')
             render json: {user: UserSerializer.new(user), token: token}, status: :created
@@ -45,6 +48,6 @@ class UsersController < ApplicationController
 
     private
     def user_params
-        params.permit(:name, :username, :password, :email)
+        params.require(:user).permit(:name, :username, :password, :email)
     end
 end
