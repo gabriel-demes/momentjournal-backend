@@ -1,6 +1,6 @@
 ## MomentJournal
 
-MomentJournal is a journaling application offering greater accessibility to online journaling. It integrates features such as speech-to-text to provide a relatively hands free journal experience as well as an overall easier journaling experience. MomentJournal also incoorperates voice commands (currently only avaiable in English) that controlss some of the functionality of the MomentJournal. However, speech-to-text is currently avaiable in 17 different languages. 
+MomentJournal is a journaling application offering greater accessibility to online journaling. It integrates features such as speech-to-text to provide a relatively hands free journaling experience as well as an overall easier journaling experience. MomentJournal also incorporates voice commands (currently only avaiable in English) that controls some of the functionality of the MomentJournal. However, speech-to-text is currently avaiable in 17 different languages. 
 
 ## Technologies
 
